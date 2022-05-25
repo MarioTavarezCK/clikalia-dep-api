@@ -18,30 +18,12 @@ npm run dev
 
 ### Endpoints
 
-| HTTP METHOD | URL          | BODY |
-| ----------- | ------------ | ---- |
-| GET         | /departments |      |
-| POST        | /departments | {    |
-
-"price": "1000000",
-"type": "onSale",
-"rooms": 3,
-"bathrooms": 2,
-"parkingSlots": 1,
-"lat": "20.563553139062364",
-"lon": "-100.45146411628113"
-} |
-| PUT | /departments | {
-"price": "1000000",
-"type": "onSale",
-"rooms": 4,
-"bathrooms": 3,
-"parkingSlots": 2,
-"lat": "20.563553139062364",
-"lon": "-100.45146411628113",
-"\_id": "628d63c52101bfd8f7c45c9a"
-} |
-| DELETE | /departments/:id | |
+| HTTP METHOD | URL              |
+| ----------- | ---------------- |
+| GET         | /departments     |
+| POST        | /departments     |
+| PUT         | /departments     |
+| DELETE      | /departments/:id |
 
 ### Descargar contenedor
 

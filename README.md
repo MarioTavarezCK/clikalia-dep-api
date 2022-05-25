@@ -56,11 +56,11 @@ Este proyecto comparte mucha similitud con el proyecto **clikalia-departaments**
 El hexágono es donde se encuentra nuestro código base, llamado **dominio** y cada uno de sus laterales es una interacción hacia un servicio externo, por ejemplo: servicios *http*
  de terceros, bases de datos, servicio de mensajería o renderización.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c89fe0b-81a1-4a86-a67e-0ce67e870299/Untitled.png)
+![hexagonal domain](https://user-images.githubusercontent.com/102178716/170360414-14691644-3f90-4582-abbc-d3ca957f3755.png)
 
 La comunicación del **dominio** con el resto de actores se realiza en una capa denominada **infraestructura** donde se encuentra la implementación específica para cada una de estas tecnologías.
+![hexagonal infraestructure](https://user-images.githubusercontent.com/102178716/170360498-6f1da41d-37bc-4f77-a265-a1540bee0759.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/182954ee-5c68-4c63-955a-92a96e2eb0a4/Untitled.png)
 
 -  **Puerto**: Es la interfaz que deberán implementar las distintas variantes de nuestro código para abstraerse de la tecnología. En ella se ha de definir la firma de los métodos que existirán.
 -  **Adaptador**: Es la implementación de la interfaz, en ella se generará el código específico para consumir una tecnología en concreto. Esta nunca se usará de forma directa en la aplicación, más allá de la declaración, ya que su uso se realizará a través del tipo del **puerto**.
